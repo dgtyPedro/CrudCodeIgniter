@@ -6,6 +6,14 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('welcome_message');
+
+        $session = session();
+        $data['username']=$session->username;
+        if (isset($session->logado)){
+            echo View('home_view', $data);
+        }else{
+            echo 'nao foi ligado';
+        }
+
     }
 }

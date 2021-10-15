@@ -6,16 +6,18 @@ class Entrar extends BaseController
 {
     public function index()
     {
-        if (isset($_SESSION['logged'])){
+        $session = session();
+        if (isset($session->logado)){
             header('location: Home');
+            exit;   
         }else{ 
-            //AQUI
             echo View('entrar_view');
         }
     }
 
     public function action()
     {
+        $session = session();
         $userModel = new \App\Models\UserModel();
         $username = $this->request->getVar('username');
         $password = $this->request->getVar('password');
@@ -26,21 +28,30 @@ class Entrar extends BaseController
             $pass = $data['password'];
             $authenticatePassword = password_verify($password, $pass);
             if($authenticatePassword){
-                echo 'foi';
-                session_regenerate_id();    
-                $_SESSION['logged'] = TRUE;
+                $session_data = [
+                    'username' => $data['username'],
+                    'logado' => TRUE
+                ];  
+
+                $session->set($session_data);
+
                 echo "<script LANGUAGE='JavaScript'>
-            window.alert('CONTA CRIADA COM SUCESSO');
-            window.location.href='http://localhost/apiRestCodeIgniter/public/Home';
-            </script>";
+                window.alert('LOGADO');
+                window.location.href='http://localhost/apiRestCodeIgniter/public/Home';
+                </script>";
+
             }else{
-                // $session->setFlashdata('msg', 'Password is incorrect.');
-                // return redirect()->to('/signin');
-                echo 'senha';
+                echo "<script LANGUAGE='JavaScript'>
+                window.alert('CREDENCIAIS INCORRETAS');
+                window.location.href='http://localhost/apiRestCodeIgniter/public/Entrar';
+                </script>";
             }
 
         }else{
-            echo 'nome';
+            echo "<script LANGUAGE='JavaScript'>
+            window.alert('CREDENCIAIS INCORRETAS');
+            window.location.href='http://localhost/apiRestCodeIgniter/public/Entrar';
+            </script>";
         }
     }
 
