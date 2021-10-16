@@ -24,7 +24,7 @@
       <div class="card-body">
         <h5 class="card-title">Create</h5>
         <p class="card-text">Crie um item</p>
-        <a href="#" class="btn" style="background-color: #214F4B; color: white; width:90px;">Criar</a>
+        <a href="http://localhost/apiRestCodeIgniter/public/Create" class="btn" style="background-color: #214F4B; color: white; width:90px;">Criar</a>
       </div>
     </div>
   </div>
@@ -33,7 +33,7 @@
       <div class="card-body">
         <h5 class="card-title">Read</h5>
         <p class="card-text">Veja os produtos criados</p>
-        <a href="#" class="btn" style="background-color: #214F4B; color: white; width:90px;">Ler</a>
+        <a href="http://localhost/apiRestCodeIgniter/public/Read" class="btn" style="background-color: #214F4B; color: white; width:90px;">Ler</a>
       </div>
     </div>
   </div>
@@ -42,7 +42,7 @@
       <div class="card-body">
         <h5 class="card-title">Update</h5>
         <p class="card-text">Atualize os itens inseridos</p>
-        <a href="#" class="btn" style="background-color: #214F4B; color: white; width:90px;">Atualizar</a>
+        <a href="http://localhost/apiRestCodeIgniter/public/Update" class="btn" style="background-color: #214F4B; color: white; width:90px;">Atualizar</a>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@
       <div class="card-body">
         <h5 class="card-title">Delete</h5>
         <p class="card-text">Delete itens inseridos</p>
-        <a href="#" class="btn" style="background-color: #214F4B; color: white; width: 90px;">Deletar</a>
+        <a href="http://localhost/apiRestCodeIgniter/public/Delete" class="btn" style="background-color: #214F4B; color: white; width: 90px;">Deletar</a>
       </div>
     </div>
   </div>
