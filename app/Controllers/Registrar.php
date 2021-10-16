@@ -33,10 +33,10 @@ class Registrar extends BaseController
 
 
         }else{
-    echo "<script LANGUAGE='JavaScript'>
-    window.alert('CONTA NÃO PODE SER CRIADA');
-    window.location.href='http://localhost/apiRestCodeIgniter/public/Registrar';
-    </script>";
+            echo "<script LANGUAGE='JavaScript'>
+            window.alert('CONTA NÃO PODE SER CRIADA');
+            window.location.href='http://localhost/apiRestCodeIgniter/public/Registrar';
+            </script>";
         }
     }
 
