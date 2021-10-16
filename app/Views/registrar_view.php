@@ -16,17 +16,22 @@
 
     </style>
   <body>
-  
+  <div class="alert alert-success alert-dismissible fade show mx-3 my-3 fixed-top" role="alert" style="width: 30rem;">
+  <strong>Página de Cadastro:</strong> Na maioria das Api's você vai querer ter um sistema de cadastro e login, é de extrema importância 
+  para determinar as permissões e as possibilidades para cada usuário.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
 
   </div>
-    <div class="card mx-auto" style="width: 30rem; margin-top:13%;">
+    <div class="card mx-auto" style="width: 30rem; margin-top:15%;">
     <div class="card-body">
-      <p>Cadastro</p>
+      <p style="font-size: 30px;">Cadastro</p>
         <form method="post" action="Registrar/action">
             <input type="text" name="username" class="form-control my-3" placeholder="Username">
             <input type="password" name="password" class="form-control my-3" placeholder="Password">
-            <button type="submit" class="btn my-auto mx-auto" style="background-color: #214F4B; color: white">Cadastrar-se</button>
-        </form>
+            <button type="submit" class="btn my-auto mx-auto" style="background-color: #214F4B; color: white; font-size:20px;">Cadastrar-se</button>
+            <a href="http://localhost/apiRestCodeIgniter/public/Entrar" class="mx-2">Já tem conta? Faça login</a>
+          </form>
     </div>
     </div>
 

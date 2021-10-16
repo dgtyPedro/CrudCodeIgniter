@@ -17,15 +17,21 @@
     </style>
   <body>
   
+  <div class="alert alert-success alert-dismissible fade show mx-3 my-3 fixed-top" role="alert" style="width: 30rem;">
+  <strong>Página de Login:</strong> É importantíssimo os programadores se atentarem com a segurança de seus sistemas, o CodeIgniter já
+  trás as melhores normas. O uso de <code>password_hash</code> e outros termos auxiliam muito na criação do sistema.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
 
   </div>
-    <div class="card mx-auto" style="width: 30rem; margin-top:13%;">
+    <div class="card mx-auto" style="width: 30rem; margin-top:15%;">
     <div class="card-body">
-      <p>Log-in</p>
+      <p style="font-size: 30px;">Log-in</p>
         <form method="post" action="Entrar/action">
             <input type="text" name="username" class="form-control my-3" placeholder="Username">
             <input type="password" name="password" class="form-control my-3" placeholder="Password">
-            <button type="submit" class="btn my-auto mx-auto" style="background-color: #214F4B; color: white">Entrar</button>
+            <button type="submit" class="btn my-auto mx-auto" style="background-color: #214F4B; color: white; font-size:20px;">Entrar</button>
+            <a href="http://localhost/apiRestCodeIgniter/public/Registrar" class="mx-2">Não tem conta? Cadastrar-se</a>
         </form>
     </div>
     </div>
