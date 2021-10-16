@@ -18,21 +18,14 @@
   <body>
   
 
-  <div class="card mx-auto" style="width: 40rem; margin-top: 12%; background-color:#214F4B; border-radius: 20px;">
+  <div class="card mx-auto" style="width: 40rem; margin-top: 12%; border-radius: 20px;">
   <div class="card-body">
-
-  <div class="alert alert-success alert-dismissible fade show mx-auto my-3" role="alert" style="width: 30rem;">
-  <strong>Hello World!</strong> Bem Vindo a API Rest em CodeIgniter, aqui iremos criar um CRUD onde o usuário pode criar, ler, atualizar e 
-  deletar (o que um CRUD faz) e no caminho irei explicar um pouquinho de cada processo. Espero que goste.
-
-  </div>
-  </div>
-  
-
-  <div class="alert alert-success mx-auto" role="alert" style="width: 6.5rem;">
-   <a href="http://localhost/apiRestCodeIgniter/public/Entrar" class="alert-link">Começar</a>
-	</div>
-	</div>
+    <h3>Hello World</h3>
+  <p>Bem Vindo a API Rest em CodeIgniter, aqui iremos criar um CRUD onde o usuário pode criar, ler, atualizar e 
+  deletar (o que um CRUD faz) e no caminho irei explicar um pouquinho de cada processo. Espero que goste.</p>
+  <a href="http://localhost/apiRestCodeIgniter/public/Entrar" class="alert-link"><button class="btn my-auto mx-auto" style="background-color: #214F4B; color: white; font-size:20px;">Começar</button>
+      </a>	
+</div>
 	</div>
 
  
