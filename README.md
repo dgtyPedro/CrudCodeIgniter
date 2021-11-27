@@ -1,2 +1,2 @@
-# apiRestCodeIgniter
-API Rest construída usando PHP e o framework CodeIgniter 4
+# CrudCodeIgniter
+Crud construído usando PHP e o framework CodeIgniter 4
